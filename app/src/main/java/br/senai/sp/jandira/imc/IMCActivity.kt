@@ -2,19 +2,16 @@
 package br.senai.sp.jandira.imc
 
 import android.content.Intent
-import android.content.IntentSender
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class IMCActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_imc)
 
         // Instanciando as classes referentes aos componentes(View) da activity.
         val editTextPeso = findViewById<EditText>(R.id.edit_text_peso)
@@ -23,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         // Cria um ouvinte para o botão abrir, que vai abriroutra activity.
         buttonCalcular.setOnClickListener {
-            val abrirActivityResultado = Intent(this, ResultadoActivity::class.java)
+            val abrirActivityResultado = Intent(this, ResultadoIMCActivity::class.java)
 
             abrirActivityResultado.putExtra("peso", editTextPeso.text.toString())
             abrirActivityResultado.putExtra("altura", editTextAltura.text.toString())

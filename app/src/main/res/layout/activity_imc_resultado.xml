@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultadoActivity"
+    tools:context=".ResultadoIMCActivity"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -49,9 +49,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:background="#ffffff"
-                android:src="@drawable/ideal"/>
+                android:padding="16dp"
+                android:src="@drawable/ideal" />
 
             <TextView
                 android:id="@+id/text_view_estado"

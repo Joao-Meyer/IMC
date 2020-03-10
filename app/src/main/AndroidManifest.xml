@@ -9,9 +9,12 @@
         android:roundIcon="@drawable/fit_amarelo_fundo_laranja"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoActivity" android:parentActivityName=".MainActivity"></activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".IMCActivity" android:parentActivityName=".CalculadoraSaudavelActivity"></activity>
+
+        <activity android:name=".ResultadoIMCActivity" android:parentActivityName=".IMCActivity"></activity>
+
+        <activity android:name=".CalculadoraSaudavelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
