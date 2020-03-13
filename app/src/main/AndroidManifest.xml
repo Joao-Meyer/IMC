@@ -14,6 +14,8 @@
 
         <activity android:name=".ResultadoIMCActivity" android:parentActivityName=".IMCActivity"></activity>
 
+        <activity android:name=".NecessidadeCaloricaActivity" android:parentActivityName=".CalculadoraSaudavelActivity"></activity>
+
         <activity android:name=".CalculadoraSaudavelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

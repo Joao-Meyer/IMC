@@ -12,4 +12,5 @@
     <color name="colorSecondaryText">#ffffff</color>
 
     <color name="colorLightText">#8993a3</color>
+    <color name="colorLighterText">#8D9199</color>
 </resources>
