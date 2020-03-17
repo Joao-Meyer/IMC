@@ -19,13 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:marginTop="30dp"
-                    android:text="Descubra agora sua"
-                    android:textSize="22sp"
-                    android:textAlignment="center"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -33,13 +27,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@color/colorPrimary">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:marginTop="30dp"
-                    android:text="Ao continuar você receberá informações"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
+
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
