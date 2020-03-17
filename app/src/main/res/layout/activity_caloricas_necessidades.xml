@@ -8,8 +8,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
         app:cardCornerRadius="20dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,16 +17,104 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:text="Descubra agora sua"
+                    android:textAlignment="center"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:text="Necessidade Calórica!"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="por DS2-M"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary">
+                android:background="@color/colorPrimary"
+                android:padding="20dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radio_feminino"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:text="Feminino"
+                            android:textAlignment="center"
+                            android:button="@color/colorPrimaryText"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_button_left_selector"/>
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radio_masculino"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:text="Masculino"
+                            android:textAlignment="center"
+                            android:button="@color/colorPrimaryText"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_button_right_selector"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_calcular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="CALCULAR"
+                    android:background="@drawable/botao_circular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ao continuar vocÊ receberá informações"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:text="para sua saúde!"
+                    android:textAlignment="center"/>
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
