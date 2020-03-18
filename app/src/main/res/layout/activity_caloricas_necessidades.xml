@@ -25,7 +25,7 @@
                     android:layout_marginBottom="5dp"
                     android:textSize="22sp"
                     android:text="Descubra agora sua"
-                    android:textAlignment="center"/>
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                     android:textStyle="bold"
                     android:layout_marginBottom="5dp"
                     android:text="Necessidade Calórica!"
-                    android:textAlignment="center"/>
+                    android:gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:text="por DS2-M"
-                    android:textAlignment="center"/>
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -63,7 +63,7 @@
                         <androidx.appcompat.widget.AppCompatRadioButton
                             android:id="@+id/radio_feminino"
                             android:layout_width="0dp"
-                            android:layout_height="50dp"
+                            android:layout_height="40dp"
                             android:textColor="@color/colorPrimaryText"
                             android:text="Feminino"
                             android:textAlignment="center"
@@ -75,7 +75,7 @@
                         <androidx.appcompat.widget.AppCompatRadioButton
                             android:id="@+id/radio_masculino"
                             android:layout_width="0dp"
-                            android:layout_height="50dp"
+                            android:layout_height="40dp"
                             android:textColor="@color/colorPrimaryText"
                             android:text="Masculino"
                             android:textAlignment="center"
@@ -86,9 +86,93 @@
                     </RadioGroup>
                 </LinearLayout>
 
-                <Button
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Idade:"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:background="@drawable/text_view_round_left"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_idade"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="24"
+                        android:textSize="18sp"
+                        android:gravity="right"
+                        android:paddingTop="8dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/edit_text_round_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Peso:"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:background="@drawable/text_view_round_left"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_peso"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="87"
+                        android:textSize="18sp"
+                        android:gravity="right"
+                        android:paddingTop="8dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/edit_text_round_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Altura:"
+                        android:textSize="18sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:background="@drawable/text_view_round_left"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_altura"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="1.85"
+                        android:textSize="18sp"
+                        android:gravity="right"
+                        android:paddingTop="8dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/edit_text_round_right"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
                     android:id="@+id/button_calcular"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
@@ -105,7 +189,7 @@
                     android:textSize="16sp"
                     android:layout_marginBottom="5dp"
                     android:text="Ao continuar vocÊ receberá informações"
-                    android:textAlignment="center"/>
+                    android:gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -114,7 +198,7 @@
                     android:textStyle="bold"
                     android:layout_marginBottom="5dp"
                     android:text="para sua saúde!"
-                    android:textAlignment="center"/>
+                    android:gravity="center"/>
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
