@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="br.senai.sp.jandira.imc">
 
     <application
@@ -10,11 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".IMCActivity" android:parentActivityName=".CalculadoraSaudavelActivity"></activity>
+        <activity
+            android:name=".IMCActivity"
+            android:parentActivityName=".CalculadoraSaudavelActivity" />
+        <activity
+            android:name=".ResultadoIMCActivity"
+            android:parentActivityName=".IMCActivity" />
+        <activity
+            android:name=".NecessidadeCaloricaActivity"
+            android:parentActivityName=".CalculadoraSaudavelActivity" />
 
-        <activity android:name=".ResultadoIMCActivity" android:parentActivityName=".IMCActivity"></activity>
-
-        <activity android:name=".NecessidadeCaloricaActivity" android:parentActivityName=".CalculadoraSaudavelActivity"></activity>
+        <activity android:name=".ResultadoNecessidadeCaloricaActivity" android:parentActivityName=".NecessidadeCaloricaActivity"/>
 
         <activity android:name=".CalculadoraSaudavelActivity">
             <intent-filter>
