@@ -36,9 +36,11 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_peso"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/colorSecondaryText"
+                    app:errorTextAppearance="@style/error_appearance"
                     android:layout_weight="1">
 
                     <EditText
@@ -47,7 +49,7 @@
                         android:id="@+id/edit_text_peso"
                         android:inputType="numberDecimal"
                         android:hint="Digite seu peso."
-                        android:textSize="24dp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
                         android:textColor="@color/colorSecondaryText"
                         android:layout_marginLeft="16dp"
@@ -69,9 +71,11 @@
                 android:layout_marginTop="16dp">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_altura"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/colorSecondaryText"
+                    app:errorTextAppearance="@style/error_appearance"
                     android:layout_weight="1">
 
                     <EditText
@@ -80,7 +84,7 @@
                         android:id="@+id/edit_text_altura"
                         android:inputType="numberDecimal"
                         android:hint="Digite sua altura."
-                        android:textSize="24dp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
                         android:textColor="@color/colorSecondaryText"
                         android:layout_marginLeft="16dp"
@@ -93,6 +97,39 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/altura"
                     android:layout_marginRight="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:paddingLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/spinner_sexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/sexo"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:backgroundTint="@color/colorSecondaryText"
+                        android:popupBackground="@color/colorPrimary"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gender"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -131,7 +168,8 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/colorSecondaryText"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
 
     </androidx.cardview.widget.CardView>
 

@@ -2,4 +2,10 @@
     <string name="app_name">Saúde</string>
 
     <string name="dica"> O processo utilizado para determinar o excesso de peso é o cálculo do índice de Massa Corporal (IMC). </string>
+    
+    <string-array name="sexo">
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Não informar</item>
+    </string-array>
 </resources>
