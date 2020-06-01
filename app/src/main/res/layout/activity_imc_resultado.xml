@@ -25,39 +25,38 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp">
-                <androidx.cardview.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="16dp">
-                    <TextView
-                        android:id="@+id/text_view_massa_corporal"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textColor="@color/colorPrimaryText"
-                        android:background="@color/colorSecondary"
-                        android:text="Seu índice de massa corporal é: "/>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="16dp">
+                        <TextView
+                            android:id="@+id/text_view_massa_corporal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:background="@color/colorSecondary"
+                            android:text="Seu índice de massa corporal é: "/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_view_imc"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="24.3"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText"
+                    android:gravity="center"
+                    android:background="@drawable/oval_background"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true">
-                    <TextView
-                        android:id="@+id/text_view_imc"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:text="24.3"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimaryText"
-                        android:gravity="center"
-                        android:background="@drawable/oval_background"/>
-                </androidx.cardview.widget.CardView>
+                    android:layout_centerVertical="true"/>
             </RelativeLayout>
 
             <RelativeLayout
