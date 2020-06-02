@@ -29,8 +29,8 @@ class IMCActivity : AppCompatActivity() {
         editTextPeso = findViewById(R.id.edit_text_peso)
         editTextAltura = findViewById(R.id.edit_text_altura)
 
-        textInputLayoutPeso = findViewById(R.id.text_input_layout_peso)
-        textInputLayoutAltura = findViewById(R.id.text_input_layout_altura)
+        textInputLayoutPeso = findViewById(R.id.txtILPeso)
+        textInputLayoutAltura = findViewById(R.id.txtILAltura)
 
         spinnerSexo = findViewById(R.id.spinner_sexo)
         buttonCalcular = findViewById(R.id.button_calcular)
